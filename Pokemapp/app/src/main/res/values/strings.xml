@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pokemapp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="pokemon">Pokémon</string>
+    <string name="location">location</string>
+    <string name="experience">experience</string>
+    <string name="weight">weight</string>
+    <string name="height">height</string>
+</resources>

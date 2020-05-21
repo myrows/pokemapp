@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pokemon.PokemonDetailActivity">
+
+    <ImageView
+        android:id="@+id/pokemonDetailImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
+        app:srcCompat="@drawable/ic_pokemon_black_24dp" />
+
+    <TextView
+        android:id="@+id/nameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Pokémon"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/pokemonDetailImage"
+        app:layout_constraintStart_toStartOf="@+id/pokemonDetailImage"
+        app:layout_constraintTop_toBottomOf="@+id/pokemonDetailImage" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/height"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/nameDetail"
+        app:layout_constraintTop_toBottomOf="@+id/nameDetail" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/weight"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/height"
+        app:layout_constraintTop_toBottomOf="@+id/height" />
+
+    <TextView
+        android:id="@+id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/experience"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/weight"
+        app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+    <ImageView
+        android:id="@+id/imageHeight"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/height"
+        app:layout_constraintStart_toStartOf="@+id/nameDetail"
+        app:layout_constraintTop_toTopOf="@+id/height"
+        app:srcCompat="@drawable/ic_height" />
+
+    <ImageView
+        android:id="@+id/imageWeight"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/weight"
+        app:layout_constraintStart_toStartOf="@+id/nameDetail"
+        app:layout_constraintTop_toTopOf="@+id/weight"
+        app:srcCompat="@drawable/ic_weight" />
+
+    <ImageView
+        android:id="@+id/imageExperience"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/experience"
+        app:layout_constraintStart_toStartOf="@+id/nameDetail"
+        app:layout_constraintTop_toTopOf="@+id/experience"
+        app:srcCompat="@drawable/ic_experience" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
